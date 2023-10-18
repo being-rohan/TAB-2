@@ -1,0 +1,40 @@
+*{
+    padding: 0%;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Alumni Sans Collegiate One', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+.acco-heading{
+    background-color:rgb(0, 0, 0,0.7);
+    color:white;
+    padding:10px;
+    margin:0;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+
+}
+.acco-heading:hover,
+.acco-heading:focus,
+.acco-heading:active{
+    background-color:rgb(255, 0, 0,0.5);
+    color:black;
+}
+.acco-content{
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    margin:0;
+    padding:10px;
+    display: none;
+    font-style: italic;
+    background-color:yellow;
+}
+.acco-panel:last-child .acco-content{
+    border-bottom: 1px solid black;
+}
+.acco-heading.active + .acco-content{
+    display: block;
+}
